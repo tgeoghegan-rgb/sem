@@ -22,6 +22,37 @@ st.set_page_config(
     layout="wide",
 )
 
+st.markdown(
+    """
+    <style>
+    .user-guide-link {
+        position: fixed;
+        top: 0.6rem;
+        right: 4.5rem;
+        z-index: 999999;
+        background: #f0f2f6;
+        border: 1px solid #c8cacc;
+        border-radius: 0.4rem;
+        padding: 0.3rem 0.9rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: #31333f;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .user-guide-link:hover {
+        background: #e0e2e6;
+        color: #31333f;
+        text-decoration: none;
+    }
+    </style>
+    <a class="user-guide-link"
+       href="https://tgeoghegan-rgb.github.io/sem/user_guide.html"
+       target="_blank" rel="noopener noreferrer">📖 User Guide</a>
+    """,
+    unsafe_allow_html=True,
+)
+
 # ── Synthetic sample data ──────────────────────────────────────────────────────
 
 @st.cache_data
